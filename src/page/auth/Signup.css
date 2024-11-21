@@ -1,0 +1,153 @@
+.signup-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.signup-left {
+  background: url('tropical-island.png') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  max-width: 500px;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.signup-left h1 {
+  font-size: 2em;
+}
+
+.signup-left p {
+  font-size: 1em;
+  margin-bottom: 10px;
+}
+
+.signup-image {
+  max-width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.signup-right {
+  background-color: white;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.signup-right h2 {
+  margin-bottom: 20px;
+  font-size: 1.5em;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 10px;
+  font-size: 0.9em;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1em;
+}
+
+.password-container {
+  position: relative;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+}
+
+.btn {
+  background-color: #00bcd4;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+  font-size: 1em;
+}
+
+.btn:hover {
+  background-color: #0097a7;
+}
+
+.or {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signup-container {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .signup-left {
+    height: 50vh;
+    border-radius: 15px 15px 0 0;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .signup-right {
+    border-radius: 0 0 15px 15px;
+  }
+
+  .signup-left h1 {
+    font-size: 1.8em;
+  }
+
+  .signup-left p {
+    font-size: 0.9em;
+  }
+}
+
+@media (max-width: 480px) {
+  .signup-left {
+    height: 40vh;
+    padding: 15px;
+  }
+
+  .signup-left h1 {
+    font-size: 1.5em;
+  }
+
+  .signup-left p {
+    font-size: 0.8em;
+  }
+
+  .signup-right {
+    padding: 15px;
+  }
+
+  button {
+    font-size: 0.9em;
+  }
+}

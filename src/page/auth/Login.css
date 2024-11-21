@@ -1,0 +1,190 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #e7f4f8;
+  height: 100%;
+}
+
+.login-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 20px; /* Added padding for small screens */
+  flex-wrap: wrap; /* Ensures layout wraps on smaller screens */
+  gap: 20px; /* Space between elements */
+}
+
+.login-left, .login-right {
+  padding: 20px;
+  border-radius: 15px;
+  box-sizing: border-box;
+}
+
+.login-left {
+  background: url('tropical-island.png') no-repeat center center;
+  background-size: cover;
+  width: 100%;
+  max-width: 500px;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: white;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.7);
+  border-radius: 15px;
+}
+
+.login-left h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.login-left p {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.login-right {
+  background-color: white;
+  width: 100%;
+  max-width: 400px;
+  padding: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  border-radius: 15px;
+}
+
+.login-right h2 {
+  font-size: 1.5rem;
+  margin-bottom: 30px;
+  text-align: center; /* Centered heading for mobile */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="email"],
+.password-container input {
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.password-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.password-container input {
+  padding-right: 40px;
+}
+
+.toggle-password {
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  font-size: 1.2rem;
+}
+
+button {
+  padding: 12px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+  background-color: #00bcd4;
+  color: white;
+  margin-bottom: 15px;
+}
+
+button[type="submit"]:hover {
+  background-color: #0097a7;
+}
+
+.or {
+  text-align: center;
+  margin: 20px 0;
+  color: #777;
+}
+
+.create-account {
+  background-color: #e0f7fa;
+  color: #00bcd4;
+}
+
+.create-account:hover {
+  background-color: #b2ebf2;
+}
+
+.error-message {
+  color: red;
+  margin-bottom: 20px;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .login-container {
+    flex-direction: column;
+    gap: 15px; /* Adjusted spacing for tighter layouts */
+    height: auto;
+  }
+
+  .login-left {
+    height: 40vh;
+    text-align: center;
+    padding: 15px;
+    border-radius: 15px 15px 0 0;
+  }
+
+  .login-left h1 {
+    font-size: 1.8rem;
+  }
+
+  .login-left p {
+    font-size: 0.9rem;
+  }
+
+  .login-right {
+    padding: 20px;
+    border-radius: 0 0 15px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-left {
+    height: 35vh;
+    padding: 10px;
+  }
+
+  .login-left h1 {
+    font-size: 1.5rem;
+  }
+
+  .login-left p {
+    font-size: 0.8rem;
+  }
+
+  .login-right {
+    padding: 15px;
+  }
+
+  button {
+    font-size: 0.9rem;
+  }
+
+  .toggle-password {
+    font-size: 1rem;
+  }
+}
