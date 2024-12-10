@@ -1,7 +1,8 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-  baseURL: "https://travel-story-backend-us3b.onrender.com/",
+  // baseURL: "https://travel-story-backend-us3b.onrender.com/",
+  baseURL: "http://localhost:8000",
   timeout: 10000,
   headers: {
     "Content-Type": "application/json",

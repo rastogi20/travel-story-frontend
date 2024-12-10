@@ -86,7 +86,7 @@ function SignUp() {
               required 
             />
             <span
-              className="toggle-password btn"
+              className="toggle-password"
               onClick={togglePasswordVisibility}
               role="button"
               aria-label={passwordVisible ? "Hide password" : "Show password"}

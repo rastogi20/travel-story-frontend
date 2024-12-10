@@ -8,6 +8,7 @@ const ImageSelector = ({ image, setImage,handleDelete}) => {
 
   const handleImageChange = (e) => {
     const file = e.target.files[0];
+    console.log(file)
     if (file) {
       setImage(file);
     //   setPreviewUrl(URL.createObjectURL(file)); // Create preview URL
@@ -40,7 +41,7 @@ const ImageSelector = ({ image, setImage,handleDelete}) => {
           URL.revokeObjectURL(previewUrl);
         }
       };
-  }, [image]);
+  }, [image]); 
 
   return (
     <div>
@@ -50,6 +51,7 @@ const ImageSelector = ({ image, setImage,handleDelete}) => {
         ref={inputRef}
         onChange={handleImageChange}
         className="hidden"
+        name='image'
       />
       
       {!image && (

@@ -181,9 +181,11 @@ function Home() {
                   alt="No stories"
                   className="w-32 h-32 mb-4"
                 />
+                
                 <h2 className="text-xl font-semibold text-gray-700">No Travel Stories Available</h2>
                 <p className="text-gray-500 mt-2">It looks like there are no travel stories to show. Add your first story or check back later!</p>
               </div>
+            
             )}
           </div>
 
